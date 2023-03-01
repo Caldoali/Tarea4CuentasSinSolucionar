@@ -7,23 +7,23 @@ public class Main {
     }
 
     private static void operativa_cuenta() {
-        Cuenta cuenta1;
+        Cuenta cuenta2;
         double saldoActual;
 
-        cuenta1 = new Cuenta("Rafael Nadal Parera","1000-2365-85-1230456789",2500,0);
+        cuenta2 = new Cuenta("Roger Federer","2100-2635-15-1230456789",4500,0);
         
-        System.out.println("El saldo actual es:"+ cuenta1.estado() );
+        System.out.println("El saldo actual es:"+ cuenta2.estado() );
 
         try {
-            cuenta1.retirar(2300);
-            System.out.println("El saldo actual es:"+ cuenta1.estado() );
+            cuenta2.retirar(2300);
+            System.out.println("El saldo actual es:"+ cuenta2.estado() );
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
-            System.out.println("El saldo actual es:"+ cuenta1.estado() );
+            cuenta2.ingresar(695);
+            System.out.println("El saldo actual es:"+ cuenta2.estado() );
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
